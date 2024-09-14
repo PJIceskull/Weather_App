@@ -1,0 +1,19 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "serve": "live-server",
+    "compile:sass": "sass scss/styles.scss css/styles.css -w"
+  },
+  "keywords": [],
+  "author": "Pierce Issah",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.78.0"
+  }
+}
