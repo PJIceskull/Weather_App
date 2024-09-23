@@ -1,0 +1,92 @@
+@font-face {
+  font-family: OpenSans-Light;
+  src: url(../css/fonts/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../css/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../css/fonts/OpenSans-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: OpenSans-Regular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: OpenSans-Bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+a {
+  transition-duration: 0.2s;
+  color: #2b5999;
+  text-decoration: none;
+}
+a:hover {
+  color: #58a5d6;
+}
+a:active {
+  color: #c0dbee;
+}
+
+#app {
+  padding: 15px;
+  min-height: 800px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+nav {
+  height: 60px;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #2b5999;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav a {
+  color: #fff;
+  font-family: OpenSans-Bold;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav a:hover {
+  border-bottom: 4px solid #fff;
+  color: #fff;
+}
+nav a:active {
+  color: #58a5d6;
+}
+
+/*# sourceMappingURL=styles.css.map */
