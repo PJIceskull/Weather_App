@@ -80,10 +80,13 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 0 15px;
 }
 nav a:hover {
-  border-bottom: 4px solid #fff;
-  color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #fff;
+  color: #2b5999;
 }
 nav a:active {
   color: #58a5d6;
