@@ -95,7 +95,9 @@ nav a:active {
 .forecastWrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 25px;
   background-color: rgba(192, 219, 238, 0.25);
   max-width: 600px;
   border-radius: 18px;
