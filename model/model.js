@@ -1,11 +1,11 @@
 export let APIkey = "ec6efbb25da2451c8fe152440242309";
-export let baseURL = "http://api.weatherapi.com/v1";
+export let baseURL = "https://api.weatherapi.com/v1";
 
 // JSON API call example
 // let URL = `${baseURL}/?key=${APIkey}&q=${Location}&api=no`
 
 export function getForecast() {
-  let forcastURL = "http://api.weatherapi.com/v1/forecast.json";
+  let forcastURL = "https://api.weatherapi.com/v1/forecast.json";
   //   let forcastURL = `${baseURL}/forecast.json?`;
   $.get(forcastURL, function (data) {
     console.log(data);
