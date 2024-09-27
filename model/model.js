@@ -29,6 +29,25 @@ export function getCurrentWeather() {
     $(".tempContain").append(
       `<h2>${data.current.temp_f} &deg;<sup>F</sup></h2><p class="conditionText">${data.current.condition.text}</p>`
     );
+    $(".forecastWrap").append(`
+        <div class="weatherIcon">
+            <img src="${data.current.condition.icon}" alt="${data.current.condition.text}" />
+          </div>
+
+          <div class="tempContain">
+            <h2>${data.current.temp_f}&deg;<sup>F</sup></h2>
+            <p class="conditionText">${data.current.condition.text}</p>
+          </div>
+
+          <div class="weatherDetails">
+            <p><strong>Winds:</strong> ${data.current.wind_mph} mph</p>
+            <p><strong>Precipitation:</strong> ${data.current.precip_in} in</p>
+            <p><strong>Humidity:</strong> ${data.current.humidity}%</p>
+            <p>Pressure: ${data.current.pressure_in} in</p>
+            <p>Dew Point: ${data.current.dewpoint_f}&deg;</p>
+            <p>UV: ${data.current.uv}</p>
+          </div>
+        `);
   }).fail(function (error) {
     console.log("Error: ", error);
   });
