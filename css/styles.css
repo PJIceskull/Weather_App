@@ -92,4 +92,53 @@ nav a:active {
   color: #58a5d6;
 }
 
+.forecastWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(192, 219, 238, 0.25);
+  max-width: 600px;
+  border-radius: 18px;
+  padding: 15px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tempContain {
+  border-radius: 15px;
+  border: 3px solid #80bbdd;
+  background-color: white;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.tempContain h2,
+.tempContain p {
+  margin-bottom: 0;
+}
+.tempContain h2 {
+  font-size: 36px;
+  color: #23254b;
+}
+.tempContain h2 sup {
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+}
+.tempContain .conditionText {
+  color: #2b5999;
+  font-size: 18px;
+}
+
+.weatherIcon {
+  height: 128px;
+  width: 128px;
+}
+.weatherIcon img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
